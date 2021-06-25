@@ -76,7 +76,7 @@ while True:
     current_time = time.time()
     fps = 1 / (current_time - previous_time)
     previous_time = current_time
-    cv2.putText(img, f"FPS: {int(fps)}", (400, 70), cv2.FONT_HERSHEY_SIMPLEX,
+    cv2.putText(img, f"FPS: {int(fps)}", (250, 70), cv2.FONT_HERSHEY_SIMPLEX,
                 1, (255, 0, 0), 3)
 
     cv2.imshow("Image", img)
